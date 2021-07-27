@@ -4,14 +4,15 @@ function Messages(props) {
   const {p}=props
   const {count,dispatch}=p
   return (
-    <div className="App">
+    <div className="div">
+      <p>useReducer:</p>
     <button onClick={() => dispatch('increment')}>
       Increment
     </button>
     <button onClick={() => dispatch('decrement')}>
       Decrement
     </button>
-    <p>Count: {count}</p>
+    <span>Count: {count}</span>
   </div>
   )
 }

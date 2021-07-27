@@ -1,8 +1,10 @@
 import React,{useReducer} from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
-import Messages from './components/Messages'
+import UseCallback from './components/UseCallback'
+import UseContext from './components/useContext'
+import UseReducer from './components/UseReducer'
+import UseState from './components/UseState'
 import {myReducer} from './reducer'
+import './App.css'
 export const AppContext = React.createContext({});
 
 function App() {
@@ -13,8 +15,10 @@ function App() {
       count:count
     }}>
       <div className="App">
-        <Navbar />
-        <Messages p={{count,dispatch}}/>
+        <UseState/>
+        <UseCallback/>
+        <UseContext />
+        <UseReducer p={{count,dispatch}}/>
       </div>
     </AppContext.Provider>
   )
