@@ -3,6 +3,8 @@ import UseCallback from './components/UseCallback'
 import UseContext from './components/useContext'
 import UseReducer from './components/UseReducer'
 import UseState from './components/UseState'
+import UseRef from './components/UseRef'
+import UseMemo from './components/UseMemo'
 import {myReducer} from './reducer'
 import './App.css'
 export const AppContext = React.createContext({});
@@ -19,6 +21,8 @@ function App() {
         <UseCallback/>
         <UseContext />
         <UseReducer p={{count,dispatch}}/>
+        <UseRef/>
+        <UseMemo/>
       </div>
     </AppContext.Provider>
   )
