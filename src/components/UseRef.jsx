@@ -4,7 +4,7 @@ export default function(){
     const ref=useRef()
    
     useEffect(() => {
-        console.log('ref--------------?', ref.current);
+        console.log('ref------------?', ref.current);
     }, [])
     return (
         <div className='div'>
