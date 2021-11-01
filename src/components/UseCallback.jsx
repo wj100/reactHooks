@@ -24,7 +24,7 @@ export default function() {
         increaseCount(clickCount + 1);
     }
 
-    // 使用`useCallback`，但也每次渲染都会重新创建内部函数作为`useCallback`的实参
+    // 使用`useCallback` ，但也每次渲染都会重新创建内部函数作为`useCallback`的实参
     const handleClick = useCallback(() => {
         console.log('handleClick');
         increaseCount(clickCount + 1);
